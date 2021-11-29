@@ -1,5 +1,5 @@
 import express from 'express';
-import { getLowPlayerServer } from '../controllers/serverhop.controllers.js';
+import { getLowPlayerServer } from '../controllers/server.controllers.js';
 
 const router = express.Router();
 
