@@ -1,8 +1,8 @@
 import express from 'express';
-import { getServer } from '../controllers/serverhop.controllers.js';
+import { getLowPlayerServer } from '../controllers/serverhop.controllers.js';
 
 const router = express.Router();
 
-router.get('/', getServer);
+router.get('/low-player-server', getLowPlayerServer);
 
 export default router;

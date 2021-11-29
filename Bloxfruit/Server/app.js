@@ -1,5 +1,5 @@
 import express from 'express';
-import serverHopRoute from './routes/serverhop.routes.js';
+import serverRoute from './routes/serverhop.routes.js';
 const app = express();
 const port = 3000;
 
@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
   });
   return;
 });
-app.use('/serverhop', serverHopRoute);
+app.use('/server', serverRoute);
 
 app.use(function (req, res, next) {
   res.status(err.status || 404).json({

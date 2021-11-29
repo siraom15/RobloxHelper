@@ -1,6 +1,6 @@
 import { ServerHopUtils } from '../utils.js';
 
-const getServer = async (req, res) => {
+const getLowPlayerServer = async (req, res) => {
   if (req.query.sea !== undefined) {
     try {
       let data = await ServerHopUtils.findLowerServer(
@@ -16,4 +16,4 @@ const getServer = async (req, res) => {
   }
 };
 
-export { getServer };
+export { getLowPlayerServer };
