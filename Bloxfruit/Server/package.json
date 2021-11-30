@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "nodemon ./bin/www.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.3",
     "express": "^4.17.1",
+    "morgan": "^1.10.0",
     "node-fetch": "^3.1.0"
   },
   "type": "module"
