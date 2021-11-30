@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-let ServerHopUtils = {
+let ServerUtils = {
   GameInstance: {
     'first-sea': '2753915549',
     'second-sea': '4442272183',
@@ -53,4 +53,4 @@ let ServerHopUtils = {
   },
 };
 
-export { ServerHopUtils };
+export default ServerUtils;
