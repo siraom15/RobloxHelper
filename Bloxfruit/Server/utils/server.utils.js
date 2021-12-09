@@ -40,7 +40,7 @@ let ServerUtils = {
           console.log('Not Found !');
           tempUrl = serverInfoUrl + '&cursor=' + nextPage;
         }
-      } while (nextPage !== undefined);
+      } while (nextPage !== null);
 
       return {
         error: 'Server Not Found',

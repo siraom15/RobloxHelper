@@ -2,8 +2,10 @@ import express from 'express';
 import serverRoute from './routes/server.routes.js';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
+import cors from 'cors';
 
 const app = express();
+app.use(cors());
 const port = 80;
 
 app.use(logger('dev'));
